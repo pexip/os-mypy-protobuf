@@ -1,0 +1,32 @@
+Source: mypy-protobuf
+Section: devel
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ Agathe Porte <debian@microjoe.org>,
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-grpc-tools,
+ python3-protobuf,
+ python3-setuptools,
+Standards-Version: 4.6.0
+Homepage: https://github.com/dropbox/mypy-protobuf
+Vcs-Browser: https://salsa.debian.org/python-team/packages/mypy-protobuf
+Vcs-Git: https://salsa.debian.org/python-team/packages/mypy-protobuf.git
+Rules-Requires-Root: no
+
+Package: mypy-protobuf
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Recommends:
+ python3-protobuf,
+Enhances:
+ protobuf-compiler,
+Description: Generate mypy stub files from protobuf specs
+ This package provides a plugin for protoc to allow it to generate
+ typing annotations for Python.

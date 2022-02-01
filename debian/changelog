@@ -1,0 +1,24 @@
+mypy-protobuf (3.2.0-1) unstable; urgency=medium
+
+  * New upstream version 3.2.0
+
+ -- Agathe Porte <debian@microjoe.org>  Tue, 01 Feb 2022 10:14:32 +0100
+
+mypy-protobuf (3.1.0-1) unstable; urgency=medium
+
+  * d/watch: drop filenamemangle
+  * New upstream version 3.1.0
+  * d/patches: drop
+  * d/rules: drop commented tests section
+  * d/rules: do not remove .pyi files
+  * Update debian metadata: new year, changed uploader
+  * d/control: update Standards-Version to 4.6.0 (no changes needed)
+  * d/control: use pybuild-plugin-pyproject
+
+ -- Agathe Porte <debian@microjoe.org>  Tue, 18 Jan 2022 18:15:22 +0100
+
+mypy-protobuf (2.4-1) experimental; urgency=medium
+
+  * Initial release. (Closes: #961898)
+
+ -- Romain Porte <debian@microjoe.org>  Thu, 04 Nov 2021 12:11:05 -0700

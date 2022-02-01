@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+export PYBUILD_DISABLE=test
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+
+override_dh_clean:
+	dh_clean
+
+	find test/generated -type f -name '*.py' -and ! -name '__init__.py' -exec rm {} \;
+
+	# Upstream release is dirty, recreate files for Git to not be lost and
+	# in order to avoid a +ds repack just for this issue.
+	mkdir test/generated/testproto/__pycache__
+	touch test/generated/testproto/__pycache__/__init__.py
+	mkdir test/generated/testproto/dot/com/__pycache__
+	touch test/generated/testproto/dot/com/__pycache__/__init__.py

@@ -1,0 +1,4 @@
+The upstream test suite cannot be run during build time nor using autopkgtests
+because of outdated protobuf and gRPC versions in Debian. This is because the
+`--experimental_allow_proto3_optional` option is not available in current
+protoc/gRPC versions in Debian.
