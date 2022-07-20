@@ -1,4 +1,4 @@
-mypy-protobuf (3.2.0-1pexip1) pexip; urgency=medium
+mypy-protobuf (3.2.0-1pexip1) pexip-bullseye; urgency=medium
 
   * Prepare Pexip packaging
 
