@@ -1,8 +1,9 @@
 Source: mypy-protobuf
 Section: devel
 Priority: optional
-Maintainer: Debian Python Team <team+python@tracker.debian.org>
-Uploaders:
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Python Team <team+python@tracker.debian.org>
+XSBC-Pexip-Original-Uploaders:
  Agathe Porte <debian@microjoe.org>,
 Build-Depends:
  debhelper-compat (= 13),
@@ -17,6 +18,7 @@ Homepage: https://github.com/dropbox/mypy-protobuf
 Vcs-Browser: https://salsa.debian.org/python-team/packages/mypy-protobuf
 Vcs-Git: https://salsa.debian.org/python-team/packages/mypy-protobuf.git
 Rules-Requires-Root: no
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ bookworm
 
 Package: mypy-protobuf
 Architecture: all
