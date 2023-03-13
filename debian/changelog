@@ -1,3 +1,13 @@
+mypy-protobuf (3.2.0-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.6.1, no changes needed.
+
+  [ Agathe Porte ]
+  * Update metadata
+
+ -- Agathe Porte <debian@microjoe.org>  Mon, 16 Jan 2023 23:45:04 +0100
+
 mypy-protobuf (3.2.0-1pexip2) pexip-bullseye; urgency=medium
 
   * Bullseye rebuild for ARM64 inclusion
@@ -33,4 +43,4 @@ mypy-protobuf (2.4-1) experimental; urgency=medium
 
   * Initial release. (Closes: #961898)
 
- -- Romain Porte <debian@microjoe.org>  Thu, 04 Nov 2021 12:11:05 -0700
+ -- Agathe Porte <debian@microjoe.org>  Thu, 04 Nov 2021 12:11:05 -0700
